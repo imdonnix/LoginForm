@@ -36,9 +36,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
   };
 
   const handleRegister = () => {
-    // Using the history API for navigation
-    window.history.pushState({}, '', '/register');
-    window.location.reload();
+    window.location.href = "/register";
   };
 
   return (
